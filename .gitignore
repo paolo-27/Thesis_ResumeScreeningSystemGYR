@@ -1,0 +1,41 @@
+echo "HireSense-AI">> .gitignore
+echo "HireSense-AI/">> .gitignore
+echo "insect_dataset/">> .gitignore
+echo "output/">> .gitignore
+echo "previous_files/">> .gitignore
+echo "tf-env/">> .gitignore
+# ------------------------------------
+# 1. PYTHON VIRTUAL ENVIRONMENTS & CACHE
+# ------------------------------------
+# Crucial: These are large and machine-specific. You should never commit them.
+tf-env/
+venv/
+.venv/
+env/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# ------------------------------------
+# 2. MACHINE LEARNING & LARGE DATA (Fixes the size error!)
+# ------------------------------------
+# These are the big binary files causing your "signal 9" push failure.
+# Add or remove specific extensions based on what's in your GYRSystem/ folder.
+*.h5          # Keras/TensorFlow model weights
+*.pkl         # Python pickle files (scikit-learn, joblib)
+*.pth         # PyTorch model files
+*.pt          # PyTorch model files
+*.onnx        # ONNX model files
+*.bin         # Binary weight files (often used by Hugging Face models)
+*.zip
+*.tar
+*.gz
+*.sqlite
+
+# Large Data Files (If your data is stored locally)
+data/
+raw_data/
+processed_data/
+large_dataset.csv
