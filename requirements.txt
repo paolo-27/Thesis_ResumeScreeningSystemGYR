@@ -137,7 +137,7 @@ rfc3987-syntax==1.1.0
 rich==13.9.4
 rpds-py==0.26.0
 safetensors==0.6.2
-scikit-learn==1.4.2
+scikit-learn==1.8.0
 scipy==1.15.3
 Send2Trash==1.8.3
 sentence-transformers==5.1.1
